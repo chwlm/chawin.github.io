@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Cloud";
+    src: url("./font/Cloud\ Sans-LightBold/Cloud-Light.ttf");
+}
+
+.font-cloud{
+    font-family: "Cloud";
+}
+
+.font-color{
+    color: aqua;
+}
+
+.hl3{
+    line-height: 1.3;
+}
