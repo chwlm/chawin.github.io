@@ -1,0 +1,105 @@
+.post {
+  position: fixed;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 95%;
+  height: 8vh;
+
+  left: 50%;
+  bottom: 1vh;
+
+  transform: translate(-50%,0);
+
+  background-color: white;
+
+  box-shadow: 0px 0px 5px 1px rgb(222, 222, 222);
+
+  border-radius: 8px;
+}
+
+.post-text {
+  flex: 1;
+  height: 80%;
+  padding: 0px;
+  padding-left: 20px;
+  font-size: 16px;
+
+  color: none;
+  background-color: none;
+  border: none;
+}
+
+.post-text:focus {
+  outline: none;
+}
+
+.post-tag {
+  width: 150px;
+  height: 80%;
+
+  margin-left: 20px;
+  border-left: solid rgb(0, 0, 0,0.3) 1px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 16px;
+  color: rgb(0, 0, 0,0.3);
+}
+
+.post-tag-select {
+  height: 80%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 16px;
+  color: rgb(0, 0, 0,0.3);
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  margin-left: 5px;
+}
+
+.post-tag-select:focus {
+  outline: none;
+}
+
+.post-fakbok {
+  margin: 10px;
+  margin-left: 0px;
+  padding: 0;
+
+  width: 130px;
+  height: 80%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+
+  color: white;
+  font-size: 16px;
+
+  background-color: rgb(250, 89, 15);
+
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+.post-fakbok-icon {
+  width: 24px;
+  object-fit: contain;
+}
+
+@media (min-width: 1000px){
+  .post{
+    width: 950px;
+  }
+}

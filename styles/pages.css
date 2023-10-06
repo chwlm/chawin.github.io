@@ -1,0 +1,19 @@
+.pages {
+  margin-top: 14vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: solid black 1px;
+}
+
+.page {
+  height: 200px;
+
+  width: 95%;
+  margin-bottom: 20px;
+
+  border: solid black 1px;
+}
