@@ -1,0 +1,78 @@
+.background-circle0,
+.background-circle1,
+.background-circle10,
+.background-circle2,
+.background-circle3,
+.background-circle30,
+.background-circle4{
+  position: fixed;
+  transition: all 1s ease-out;
+}
+
+.background-circle0{
+  width: 468px;
+  height: 468px;
+  background-color: rgb(255, 46, 0, 0.5);
+  border-radius: 50%;
+  left: -174px;
+  bottom: -104px;
+  z-index: -200;
+}
+
+.background-circle1,
+.background-circle10{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  bottom: -160px;
+  left: 100px;
+}
+
+.background-circle1{
+  background-color: rgb(252, 125, 54, 0.5);
+  z-index: -100;
+}
+
+.background-circle10{
+  background-color: white;
+  z-index: -150;
+}
+
+.background-circle2{
+  width: 468px;
+  height: 468px;
+  background-color: rgb(255, 77, 0, 0.5);
+  border-radius: 50%;
+  top: 16vh;
+  right: -234px;
+  z-index: -200;
+}
+
+.background-circle3,
+.background-circle30{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  right: 70px;
+  top: 55vh;
+}
+
+.background-circle3{
+  background-color: rgb(252, 125, 54, 0.5);
+  z-index: -100;
+}
+
+.background-circle30{
+  background-color: white;
+  z-index: -150;
+}
+
+.background-circle4{
+  width: 370px;
+  height: 370px;
+  border-radius: 50%;
+  top: -70px;
+  left: -150px;
+  background-color: rgb(255, 107, 0, 0.5);
+  z-index: -200;
+}

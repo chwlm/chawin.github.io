@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="./styles/background.css" rel="stylesheet">
     <link href="./styles/general.css" rel="stylesheet">
     <link href="./styles/topic.css" rel="stylesheet">
     <link href="./styles/catagories.css" rel="stylesheet">
@@ -9,44 +10,49 @@
     <title>Fakbok CU</title>
   </head>
   <body>
+    <div class="background-circle0"></div>
+    <div class="background-circle10"></div>
+    <div class="background-circle1"></div>
+    <div class="background-circle2"></div>
+    <div class="background-circle3"></div>
+    <div class="background-circle30"></div>
+    <div class="background-circle4"></div>
     <div class="topic">
-      <div class="topic-education">
+      <div class="topic-education" onclick="change_topic('EDU')">
       <img class="topic-education-icon" src="./IMGs/ICON_education_on.png">
         <div class="topic-education-text">EDUCATION</div>
       </div>
-      <div class="topic-offtopic">
+      <div class="topic-offtopic" onclick="change_topic('OFF')">
         <img class="topic-offtopic-icon" src="./IMGs/ICON_offtopic_off.png">
         <div class="topic-offtopic-text">OFFTOPIC</div>
       </div>
     </div>
     <div class="catagories">
-      <div class="tag">INTANIA<div class="tag-circle"></div></div>
-      <div class="tag">MDCU<div class="tag-circle"></div></div>
-      <div class="tag">ECON<div class="tag-circle"></div></div>
-      <div class="tag">SCCU<div class="tag-circle"></div></div>
-      <div class="tag">PSYCHO<div class="tag-circle"></div></div>
-      <div class="tag">EDU<div class="tag-circle"></div></div>
-      <div class="tag">VETER<div class="tag-circle"></div></div>
-      <div class="tag">SINGHDAM<div class="tag-circle"></div></div>
-      <div class="tag">BANSHI<div class="tag-circle"></div></div>
-      <div class="tag">AKSORN<div class="tag-circle"></div></div>
-      <div class="tag">ARCH<div class="tag-circle"></div></div>
-      <div class="tag">NITADE<div class="tag-circle"></div></div>
-      <div class="tag">PHARM<div class="tag-circle"></div></div>
-      <div class="tag">LAW<div class="tag-circle"></div></div>
-      <div class="tag">DENT<div class="tag-circle"></div></div>
-      <div class="tag">SINGUM<div class="tag-circle"></div></div>
-      <div class="tag">SAHAVATE<div class="tag-circle"></div></div>
-      <div class="tag">SPSC<div class="tag-circle"></div></div>
-      <div class="tag">BASCII<div class="tag-circle"></div></div>
-      <div class="tag">SAR<div class="tag-circle"></div></div>
+      <div class="tag" id="tagINTANIA" onclick="click_tag('INTANIA')">INTANIA<div class="tag-circle"></div></div>
+      <div class="tag" id="tagMDCU" onclick="click_tag('MDCU')">MDCU<div class="tag-circle"></div></div>
+      <div class="tag" id="tagECON" onclick="click_tag('ECON')">ECON<div class="tag-circle"></div></div>
+      <div class="tag" id="tagSCCU" onclick="click_tag('SCCU')">SCCU<div class="tag-circle"></div></div>
+      <div class="tag" id="tagPSYCHO" onclick="click_tag('PSYCHO')">PSYCHO<div class="tag-circle"></div></div>
+      <div class="tag" id="tagEDU" onclick="click_tag('EDU')">EDU<div class="tag-circle"></div></div>
+      <div class="tag" id="tagVETER" onclick="click_tag('VETER')">VETER<div class="tag-circle"></div></div>
+      <div class="tag" id="tagSINGHDAM" onclick="click_tag('SINGHDAM')">SINGHDAM<div class="tag-circle"></div></div>
+      <div class="tag" id="tagBANSHI" onclick="click_tag('BANSHI')">BANSHI<div class="tag-circle"></div></div>
+      <div class="tag" id="tagAKSORN" onclick="click_tag('AKSORN')">AKSORN<div class="tag-circle"></div></div>
+      <div class="tag" id="tagARCH" onclick="click_tag('ARCH')">ARCH<div class="tag-circle"></div></div>
+      <div class="tag" id="tagNITADE" onclick="click_tag('NITADE')">NITADE<div class="tag-circle"></div></div>
+      <div class="tag" id="tagPHARM" onclick="click_tag('PHARM')">PHARM<div class="tag-circle"></div></div>
+      <div class="tag" id="tagLAW" onclick="click_tag('LAW')">LAW<div class="tag-circle"></div></div>
+      <div class="tag" id="tagDENT" onclick="click_tag('DENT')">DENT<div class="tag-circle"></div></div>
+      <div class="tag" id="tagSINGUM" onclick="click_tag('SINGUM')">SINGUM<div class="tag-circle"></div></div>
+      <div class="tag" id="tagSAHAVATE" onclick="click_tag('SAHAVATE')">SAHAVATE<div class="tag-circle"></div></div>
+      <div class="tag" id="tagSPSC" onclick="click_tag('SPSC')">SPSC<div class="tag-circle"></div></div>
+      <div class="tag" id="tagBASCII" onclick="click_tag('BASCII')">BASCII<div class="tag-circle"></div></div>
+      <div class="tag" id="tagSAR" onclick="click_tag('SAR')">SAR<div class="tag-circle"></div></div>
 
     </div>    
     <div class="pages">
       <div class="page">
-        <div class="page-header"></div>
-        <div class="page-context"></div>
-        <div class="page-"></div>
+        page 1
       </div>
       <div class="page">
         page 2
@@ -61,7 +67,7 @@
     <div class="post">
       <input type="text" class="post-text" placeholder="Some massage here">
       <div class="post-tag">
-        TO : 
+        <div class="post-tag-text">TO :</div>
         <select class="post-tag-select">
           <option value="INTANIA">INTANIA</option>
           <option value="MDCU">MDCU</option>
@@ -89,8 +95,11 @@
       
       <button class="post-fakbok">
         <img class="post-fakbok-icon" src="./IMGs/ICON_fakbok.png">
-        Fakbok
+        <div class="post-fakbok-text">Fakbok</div>
       </button>
     </div>
+    <script src="./script.js">
+
+    </script>
   </body>
 </html>

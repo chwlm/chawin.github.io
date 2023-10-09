@@ -6,10 +6,10 @@
   align-items: center;
 
   width: 95%;
-  height: 8vh;
+  height: 60px;
 
   left: 50%;
-  bottom: 1vh;
+  bottom: 10px;
 
   transform: translate(-50%,0);
 
@@ -37,10 +37,12 @@
 }
 
 .post-tag {
-  width: 150px;
+  /* width: 150px; */
   height: 80%;
 
   margin-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-left: solid rgb(0, 0, 0,0.3) 1px;
 
   display: flex;
@@ -85,12 +87,14 @@
   color: white;
   font-size: 16px;
 
-  background-color: rgb(250, 89, 15);
+  background-color: #FC5A36;
 
   border: none;
   border-radius: 6px;
 
   cursor: pointer;
+
+  transition: all 0.2s;
 }
 
 .post-fakbok-icon {
@@ -98,8 +102,21 @@
   object-fit: contain;
 }
 
-@media (min-width: 1000px){
+@media (min-width: 840px){
   .post{
-    width: 950px;
+    width: 800px;
+  }
+}
+
+@media (max-width: 600px){
+  .post-tag-text{
+    display: none;
+  }
+
+  .post-fakbok{
+    width: 48px;
+  }
+  .post-fakbok-text{
+    display: none;
   }
 }

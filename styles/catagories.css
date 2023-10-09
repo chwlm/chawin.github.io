@@ -2,29 +2,42 @@
   position: fixed;
 
   width: 95%;
-  height: 4vh;
+  height: 34px;
 
   left: 50%;
-  top: 8.5vh;
+  top: 70px;
 
   transform: translate(-50%,0);
 
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
+
+  overflow: auto;
+  white-space: nowrap;
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 
   /* border: solid black 1px; */
+}
+
+.catagories::-webkit-scrollbar{
+  display: none;
 }
 
 .tag {
   position: relative;
 
+  display: flex;
+
   align-items: center;
 
   text-align: start;
 
-  background-color: #ffd1d1;
+  background-color: white;
 
-  border: solid red 1.5px;
+  border: solid white 1.5px;
   border-radius: 100px;
 
   padding-left: 10px;
@@ -35,6 +48,8 @@
   margin: 2px;
 
   cursor: pointer;
+
+  transition: all 0.2s;
 }
 
 .tag-circle {
@@ -45,11 +60,22 @@
 
   align-items: center;
 
-  background-color: red;
+  background-color: white;
 
   top: 50%;
   right: 4px;
+  left: auto;
   transform: translate(0,-50%);
 
   border-radius: 50%;
+  transition: all 0.2s;
+}
+
+@media (min-width: 840px){
+  .catagories{
+    width: 800px;
+  }
+  .catagories-blur{
+    width: 800px;
+  }
 }

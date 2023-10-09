@@ -1,11 +1,11 @@
 .topic {
   position: fixed;
 
-  width: 20%;
-  height: 6vh;
+  width: 300px;
+  height: 50px;
 
   left: 50%;
-  top: 1vh;
+  top: 10px;
 
   display: flex;
   justify-content: space-evenly;
@@ -16,22 +16,27 @@
   background-color: rgb(224, 224, 224);
   border-radius: 8px;
 
+  cursor: pointer;
+
+  transition: all 0.2s;
   /* border: solid black 1px; */
 }
 
 .topic-education,
 .topic-offtopic {
   /* border: solid black 1px; */
-  width: 48.5%;
-  height: 90%;
+  width: 145px;
+  height: 44px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  column-gap: 5px;
+  column-gap: 4px;
 
   border-radius: 6px;
+
+  transition: all 0.2s;
 }
 
 .topic-education {
@@ -41,8 +46,9 @@
 .topic-education-icon,
 .topic-offtopic-icon {
   /* border: solid black 1px; */
-  height: 16px;
+  height: 25px;
   object-fit: contain;
+  transition: all 0.2s;
 }
 
 
@@ -50,16 +56,21 @@
 .topic-offtopic-text {
   /* border: solid black 1px; */
   
-  font-size: 12px;
+  font-size: 14px;
+  transition: all 0.2s;
 }
 
 .topic-education-text {
   color: red;
 }
 
-@media (max-width: 1200px){
+.topic-offtopic-text {
+  color: black;
+}
+
+/* @media (max-width: 600px){
   .topic-education-text,
   .topic-offtopic-text {
     display: none;
   }
-}
+} */

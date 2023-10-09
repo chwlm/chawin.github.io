@@ -1,12 +1,12 @@
 .pages {
-  margin-top: 14vh;
+  margin-top: 110px;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 
-  border: solid black 1px;
+  /* border: solid black 1px; */
 }
 
 .page {
@@ -15,5 +15,11 @@
   width: 95%;
   margin-bottom: 20px;
 
-  border: solid black 1px;
+  /* border: solid black 1px; */
+}
+
+@media (min-width: 840px){
+  .page{
+    width: 800px;
+  }
 }
